@@ -4,3 +4,5 @@ export const isLocal = process.env.NODE_ENV === 'development';
 export const showLogger = isLocal
   ? true
   : process.env.NEXT_PUBLIC_SHOW_LOGGER === 'true' ?? false;
+
+export const graphqlApiUrl = process.env.GRAPHQL_API_URL;
