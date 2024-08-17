@@ -57,7 +57,7 @@ const KPIModal = ({ isOpen, onClose, asset, isFavorite, toggleFavorite }: KPIMod
             <h3 className="text-sm font-semibold text-gray-800 mb-2">Metrics</h3>
             <div className="flex flex-wrap gap-2">
               {kpi.metrics.map((metric) => (
-                <div key={metric.value} className="bg-gray-200 text-gray-800 px-2 py-1 rounded-full text-xs shadow-sm">
+                <div key={metric.name} className="bg-gray-200 text-gray-800 px-2 py-1 rounded-full text-xs shadow-sm">
                   {metric.name}: {metric.value}
                 </div>
               ))}
